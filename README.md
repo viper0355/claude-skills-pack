@@ -14,20 +14,23 @@
 - `youtube-watcher`：字幕語言改為繁中優先（`zh-Hant,zh-TW,zh,en`），路徑改為 Claude Code 格式
 - `nano-banana-pro`：路徑由 `~/.codex` 改為 `~/.claude`
 
-## 安裝
+## 安裝（最簡單的方式）
+
+打開 Claude 對話，貼上本 repo 網址（https://github.com/viper0355/claude-skills-pack），然後說：
+
+> 幫我審查這個 SKILL，並注意是否有危險代碼，如果沒有的話幫我安裝並啟用這個 SKILL
+
+Claude 會自動處理 clone、依賴安裝（yt-dlp、uv）和啟用，重啟 Claude Code 後生效。
+
+<details>
+<summary>手動安裝（進階使用者）</summary>
 
 ```bash
 git clone https://github.com/viper0355/claude-skills-pack
 cp -r claude-skills-pack/{youtube-watcher,humanizer,nano-banana-pro} ~/.claude/skills/
-```
-
-依賴安裝（macOS）：
-
-```bash
 brew install yt-dlp uv
 ```
-
-重啟 Claude Code 後生效。
+</details>
 
 ## 推薦搭配：Tavily 官方 Skills（網頁搜尋/擷取/深度研究）
 
@@ -39,16 +42,11 @@ brew install yt-dlp uv
 
 1. 到 [tavily.com](https://www.tavily.com/) 點 **Sign Up**，用 Google 帳號登入即可
 2. 登入後進入 Dashboard（[app.tavily.com](https://app.tavily.com/)），在 **API Keys** 區塊會看到一組預設的 `tvly-dev-...` key，點眼睛圖示顯示後複製
-3. 安裝 Tavily CLI 並登入：
-   ```bash
-   curl -fsSL https://cli.tavily.com/install.sh | bash
-   tvly login --api-key tvly-dev-你的KEY
-   ```
-4. 安裝官方 skills：
-   ```bash
-   git clone https://github.com/tavily-ai/skills tavily-skills
-   cp -r tavily-skills/skills/{tavily-search,tavily-extract,tavily-research,tavily-cli} ~/.claude/skills/
-   ```
+3. 回到 Claude 對話，貼上官方 repo 的網址（https://github.com/tavily-ai/skills），告訴 Claude：
+
+   > 幫我審查這個 SKILL，並注意是否有危險代碼，如果沒有的話幫我安裝並啟用這個 SKILL
+
+4. 安裝完成後，把你的 API key 貼給 Claude，請它幫你設定登入即可
 
 > 免費方案 1,000 credits/月：basic 搜尋 1 credit、advanced 搜尋 2 credits、深度研究消耗較多，省著用。
 
@@ -66,16 +64,11 @@ brew install yt-dlp uv
 
 ### 安裝
 
-```bash
-git clone https://github.com/axtonliu/ai-pair.git ~/.claude/skills/ai-pair
-```
+跟 Claude 說：
 
-依賴兩個 CLI（各自登入自己的帳號即可，不需另外的 API key）：
+> 幫我審查這個 SKILL（https://github.com/axtonliu/ai-pair），並注意是否有危險代碼，如果沒有的話幫我安裝並啟用這個 SKILL，依賴的 Codex CLI 和 Gemini CLI 也一起裝
 
-```bash
-npm install -g @openai/codex        # Codex CLI（GPT 審查者）
-npm install -g @google/gemini-cli   # Gemini CLI（Gemini 審查者）
-```
+裝好後分別跑一次 `codex` 和 `gemini` 登入帳號即可，不需額外 API key。
 
 ## Gemini API Key（nano-banana-pro 用）
 
