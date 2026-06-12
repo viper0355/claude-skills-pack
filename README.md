@@ -62,13 +62,7 @@ brew install yt-dlp uv
 /ai-pair team-stop             # 收工，清理資源
 ```
 
-### 安裝
-
-跟 Claude 說：
-
-> 幫我審查這個 SKILL（https://github.com/axtonliu/ai-pair），並注意是否有危險代碼，如果沒有的話幫我安裝並啟用這個 SKILL，依賴的 Codex CLI 和 Gemini CLI 也一起裝
-
-裝好後分別跑一次 `codex` 和 `gemini` 登入帳號即可，不需額外 API key。
+安裝方式與依賴請見官方 repo 說明。
 
 ## Gemini API Key（nano-banana-pro 用）
 
