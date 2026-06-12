@@ -52,28 +52,30 @@ brew install yt-dlp uv
 
 > 免費方案 1,000 credits/月：basic 搜尋 1 credit、advanced 搜尋 2 credits、深度研究消耗較多，省著用。
 
-## 推薦搭配：Axton 視覺化 Skills（Obsidian 圖表生成）
+## 推薦搭配：Axton ai-pair（多 AI 互相調用協作）
 
-官方 repo：**https://github.com/axtonliu/axton-obsidian-visual-skills**
+官方 repo：**https://github.com/axtonliu/ai-pair**
 
-把文字一鍵變圖表的三件套，免 API key：
-
-| Skill | 功能 |
-|---|---|
-| Excalidraw Diagram Generator | 手繪風圖表（流程圖、心智圖等 8 種，含動畫模式） |
-| Mermaid Visualizer | 文字轉 Mermaid 專業圖表（流程/序列/狀態圖） |
-| Obsidian Canvas Creator | 生成互動式 Obsidian Canvas 檔案 |
-
-### 安裝（plugin 市集方式，推薦）
-
-在 Claude Code 內輸入：
+讓 Claude 指揮一個異質 AI 團隊：一個負責產出（Claude），兩個負責審查（Codex + Gemini）。不同模型家族的審查視角不同，覆蓋面最大化。寫程式、文章、影片腳本都適用。
 
 ```
-/plugin marketplace add axtonliu/axton-obsidian-visual-skills
-/plugin install obsidian-visual-skills
+/ai-pair dev-team [專案]       # 開發團隊：developer + codex-reviewer + gemini-reviewer
+/ai-pair content-team [主題]   # 內容團隊：author + codex-reviewer + gemini-reviewer
+/ai-pair team-stop             # 收工，清理資源
 ```
 
-> 依賴：Obsidian 應用；Excalidraw skill 需要 Obsidian 的 Excalidraw 外掛。
+### 安裝
+
+```bash
+git clone https://github.com/axtonliu/ai-pair.git ~/.claude/skills/ai-pair
+```
+
+依賴兩個 CLI（各自登入自己的帳號即可，不需另外的 API key）：
+
+```bash
+npm install -g @openai/codex        # Codex CLI（GPT 審查者）
+npm install -g @google/gemini-cli   # Gemini CLI（Gemini 審查者）
+```
 
 ## Gemini API Key（nano-banana-pro 用）
 
