@@ -52,7 +52,30 @@ brew install yt-dlp uv
 
 > 免費方案 1,000 credits/月：basic 搜尋 1 credit、advanced 搜尋 2 credits、深度研究消耗較多，省著用。
 
-### Gemini API Key（nano-banana-pro 用）
+## 推薦搭配：Axton 視覺化 Skills（Obsidian 圖表生成）
+
+官方 repo：**https://github.com/axtonliu/axton-obsidian-visual-skills**
+
+把文字一鍵變圖表的三件套，免 API key：
+
+| Skill | 功能 |
+|---|---|
+| Excalidraw Diagram Generator | 手繪風圖表（流程圖、心智圖等 8 種，含動畫模式） |
+| Mermaid Visualizer | 文字轉 Mermaid 專業圖表（流程/序列/狀態圖） |
+| Obsidian Canvas Creator | 生成互動式 Obsidian Canvas 檔案 |
+
+### 安裝（plugin 市集方式，推薦）
+
+在 Claude Code 內輸入：
+
+```
+/plugin marketplace add axtonliu/axton-obsidian-visual-skills
+/plugin install obsidian-visual-skills
+```
+
+> 依賴：Obsidian 應用；Excalidraw skill 需要 Obsidian 的 Excalidraw 外掛。
+
+## Gemini API Key（nano-banana-pro 用）
 
 到 [aistudio.google.com/apikey](https://aistudio.google.com/apikey) 建立 key，然後：
 
