@@ -54,15 +54,9 @@ brew install yt-dlp uv
 
 官方 repo：**https://github.com/axtonliu/ai-pair**
 
-讓 Claude 指揮一個異質 AI 團隊：一個負責產出（Claude），兩個負責審查（Codex + Gemini）。不同模型家族的審查視角不同，覆蓋面最大化。寫程式、文章、影片腳本都適用。
+**摘要**：Axton Liu 開發的多 AI 協作 skill。核心概念是「一個創作、兩個審查」——由 Claude 擔任產出者（開發者或作者），再調用 Codex（GPT）和 Gemini 兩個不同家族的模型當審查者。因為不同模型的審查視角和盲點不同，交叉審查能找出單一 AI 看不到的問題。內建開發團隊（dev-team）與內容團隊（content-team）兩種模式，寫程式、文章、影片腳本都適用，一句指令就能讓三個 AI 開始協作。
 
-```
-/ai-pair dev-team [專案]       # 開發團隊：developer + codex-reviewer + gemini-reviewer
-/ai-pair content-team [主題]   # 內容團隊：author + codex-reviewer + gemini-reviewer
-/ai-pair team-stop             # 收工，清理資源
-```
-
-安裝方式與依賴請見官方 repo 說明。
+安裝方式、依賴與完整用法，詳情請到他的專案查看：https://github.com/axtonliu/ai-pair
 
 ## Gemini API Key（nano-banana-pro 用）
 
