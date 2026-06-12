@@ -60,6 +60,10 @@ brew install yt-dlp uv
 
 ## 🔑 Gemini API Key（nano-banana-pro 用）
 
+> [!WARNING]
+> ### ⚠️ 此功能需要另外付費
+> **Gemini 3 Pro Image（Nano Banana Pro）的圖片生成是計次收費，不在免費額度內。請先到 [Google AI Studio](https://aistudio.google.com/) 確認你的方案與費率，再啟用此 skill。**
+
 到 [aistudio.google.com/apikey](https://aistudio.google.com/apikey) 建立 key，然後：
 
 ```bash
