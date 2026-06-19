@@ -60,6 +60,14 @@ brew install yt-dlp uv
 
 安裝方式、依賴與完整用法，詳情請到他的專案查看：https://github.com/axtonliu/ai-pair
 
+## 🧠 推薦搭配：Harry Lee second-brain（第二大腦技能集）
+
+官方 repo：**https://github.com/harryleemedia/second-brain**
+
+**摘要**：Harry Lee（harryleemedia）開發的「第二大腦」技能集，把 Claude Code 從寫程式工具擴展成知識工作系統。收錄品牌與語調產生器、PPTX 品牌簡報／LinkedIn 輪播圖產生器、SOP／Runbook 文件建立器、MCP 客戶端（按需載入工具定義、不撐爆上下文）、技能建立器，以及 Remotion 程式化影片製作。核心是「漸進式載入」——Claude 只在需要時才載入詳細指令，省上下文又保專業深度。對做簡報、品牌一致性、影片內容的創作者特別實用。
+
+安裝方式、依賴與完整用法，詳情請到他的專案查看：https://github.com/harryleemedia/second-brain
+
 ## 🔑 Gemini API Key（nano-banana-pro 用）
 
 > [!WARNING]
