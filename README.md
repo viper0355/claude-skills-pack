@@ -18,9 +18,9 @@
 
 ## ⚡ 安裝（最簡單的方式）
 
-打開 Claude 對話，貼上本 repo 網址（https://github.com/viper0355/claude-skills-pack），然後說：
+打開 Claude 對話，貼上本 repo 網址（https://github.com/viper0355/claude-skills-pack），
 
-> 幫我審查這個 SKILL，並注意是否有危險代碼，如果沒有的話幫我安裝並啟用這個 SKILL
+然後說：> 幫我審查這個 SKILL，並注意是否有危險代碼，如果沒有的話幫我安裝並啟用這個 SKILL
 
 Claude 會自動處理 clone、依賴安裝（yt-dlp、uv）和啟用，重啟 Claude Code 後生效。
 
