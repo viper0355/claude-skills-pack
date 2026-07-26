@@ -8,6 +8,7 @@
 |---|---|---|---|
 | 📺 [youtube-watcher](youtube-watcher/) | 抓 YouTube 影片字幕，做摘要/問答/研究 | `yt-dlp` | [ClawHub](https://clawhub.ai/michaelgathara/youtube-watcher) |
 | ✍️ [humanizer](humanizer/) | 去除 AI 寫作痕跡，讓文字更自然（24 種模式） | 無 | [ClawHub](https://clawhub.ai/biostartechnology/humanizer) |
+| 🇹🇼 [humanizer-zh-tw](humanizer-zh-tw/) | 繁中台灣去 AI 味強化版：大陸用語/書面翻譯腔/的的不休/過度工整/缺語氣詞 + audit loop + TTS 友善。疊在 humanizer 上跑 | 無 | 自製 |
 | 🍌 [nano-banana-pro](nano-banana-pro/) | 用 Gemini 3 Pro Image 生成/編輯圖片（最高 4K） | `uv`、Gemini API key | [ClawHub](https://clawhub.ai/steipete/nano-banana-pro) |
 | 📈 [self-improving-agent](self-improving-agent/) | 把踩坑與教訓自動記錄成 `.learnings/` 日誌，跨 session/跨 AI 共讀，越用越聰明 | 無 | [ClawHub](https://clawhub.ai/pskoett/self-improving-agent) |
 
@@ -29,7 +30,7 @@ Claude 會自動處理 clone、依賴安裝（yt-dlp、uv）和啟用，重啟 C
 
 ```bash
 git clone https://github.com/viper0355/claude-skills-pack
-cp -r claude-skills-pack/{youtube-watcher,humanizer,nano-banana-pro,self-improving-agent} ~/.claude/skills/
+cp -r claude-skills-pack/{youtube-watcher,humanizer,humanizer-zh-tw,nano-banana-pro,self-improving-agent} ~/.claude/skills/
 brew install yt-dlp uv
 ```
 </details>
